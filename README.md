@@ -25,10 +25,18 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. How would you describe preprocessing to someone new to CSS?
+Pre-Processors are kinda like a bungie jump, stay with me here. The rock you are standing upon is CSS/Web Browser, you are the code, when you jump you head off into ease and exciting new ways to preview a world (language/code) the preprocessor "the bungie chord", is there to insure all the NEW i.e. mixins; functions; variables;... is able to easily returned to the rock (CSS/Web Browser) since the rock only no 1 standing of the language, the bungie chord(preprocessor) helps as a translator.
+
 2. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+Fave concept - Mixins
+Gives me Trouble - functions (conditions)
 3. How would you explain the concept of a variable to someone new to programming?
+easy identifier. Variables put, lets say you have a color that is used continuously throughout the project. By using a variable you are keeping your code dry and it makes it easier to change in the future.
 4. What is the purpose of using functions in code?
+To make me bald. Truly you can do so much with functions, the possiblilities are endless. A function is a block of organized, reusable code that is used to perform a single, related action.
 5. What is a JSON data?
+JavaScript Object Notation is an open standard file format, and data interchange format, that uses human-readable text to store and transmit data objects consisting of attribute–value pairs and array data types
+It is a translator for really confusing things.
 
 You may need to look up an answer but, you are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
