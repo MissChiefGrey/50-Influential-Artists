@@ -1,3 +1,15 @@
+.title-mixin {
+  border: 1px solid black;
+  width: 80%;
+  margin: 0 auto;
+  height: 95vh;
+  color: white;
+}
+.centered-mixin {
+  text-align: center;
+  width: 20rem;
+  font-size: 5rem;
+}
 html,
 body,
 div,
@@ -86,37 +98,121 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+h1 {
+  font-family: fantasy;
+  font-size: 6rem;
+  font-style: normal;
+}
+p {
+  font-size: 3.5rem;
+  background-color: grey;
+  opacity: 20%;
+  padding: 0.5rem;
+}
+header {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 header nav {
+  width: 80%;
+  height: 10vh;
   display: flex;
   justify-content: center;
-  text-align: center;
-  padding: 5rem 0 2rem 0;
+  align-items: center;
 }
 header nav a {
   text-decoration: none;
-  color: silver;
   margin: 1rem;
-  font-family: fantasy;
-  border-right: medium solid grey;
-  padding: 0 2rem 0 0;
+  font-size: 3rem;
+  color: black;
 }
-header nav a a:hover {
-  color: grey;
-}
-.titlecontainer .container2 {
-  position: relative;
-}
-.titlecontainer .container2 img {
-  margin: auto;
-  height: 200px;
-  width: 300px;
-}
-.titlecontainer .container2 .text-block {
-  position: relative;
-  bottom: 20px;
-  right: 20px;
-  background-color: black;
+.title-mixin {
+  border: 1px solid black;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  height: 95vh;
   color: white;
-  padding-left: 20px;
-  padding-right: 20px;
+}
+html {
+  font-size: 62.5%;
+  /*62.5% means that 10px = 1 rem */
+}
+hr {
+  width: 80%;
+}
+.title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("../assets/home.png");
+  border: 1px solid black;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  height: 95vh;
+  color: white;
+}
+@media (max-width: 500px) {
+  .title-container {
+    width: 90%;
+  }
+}
+.title-container .centered {
+  text-align: center;
+  width: 20rem;
+  font-size: 5rem;
+}
+.title-container button {
+  background-color: white;
+  color: black;
+  width: 20rem;
+  font-size: 16px;
+  padding: 12px 24px;
+}
+.artists-container {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+@media (max-width: 500px) {
+  .artists-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.artists-container img:hover {
+  opacity: 0.5;
+}
+.artists-container .artist {
+  margin: 2rem 4rem 2rem 4rem;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .artists-container .artist {
+    width: 90%;
+  }
+}
+.artists-container .artist a {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  margin: 2rem 0 2rem 0;
+}
+.artists-container .artist .bio {
+  font-size: 1.5rem;
+}
+.artists-container .artist img {
+  border-radius: 0.5rem;
+  width: 100%;
 }
