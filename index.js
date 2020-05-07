@@ -256,27 +256,6 @@ console.log(removeArtist(artists, 1));
 
 /* Task 5: Create a function called lotsOfArt() that takes artists as an argument and returns an array with names of artists who painted more than 100 paintings */
 
-function get20s() {
-  const artists20 = [];
-  for (i = 0; i <= artists.length - 1; i++) {
-    if (parseInt(artists[i].years) >= 1900) {
-      artists20.push(artists[i].name);
-    }
-  }
-  return artists20;
-}
-console.log(get20s(artists));
-
-
-/* Task 6: Create a function called `addArtist` that can accept an array of information and add it to the artists array. Then, Add a 21st artist to the array (you) with custom information! 👩‍🎨👨‍🎨
-
-id: 21
-name: Your Name Here, 
-years: Your Birth Year - current day,
-genre: Web Design, 
-nationality: Your Nationality Here
-bio: Add 1-2 sentences (or use lorem ipsum) "*/
-
 function lotsOfArt(artists) {
   let painting = [];
   for (let i = 0; i < artists.length; i++) {
@@ -289,18 +268,47 @@ function lotsOfArt(artists) {
 console.log(lotsOfArt(artists));
 
 
+/* Task 6: Create a function called `addArtist` that can accept an array of information and add it to the artists array. Then, Add a 21st artist to the array (you) with custom information! 👩‍🎨👨‍🎨
+
+id: 21
+name: Your Name Here, 
+years: Your Birth Year - current day,
+genre: Web Design, 
+nationality: Your Nationality Here
+bio: Add 1-2 sentences (or use lorem ipsum) "*/
+
+let newArtists = {
+  id: 21,
+  name: 'Elizabeth Rochelle Jo Marie Knoll Pierce Chrisco Sellers',
+  years: "1989",
+  genre: "The growing art",
+  nationality: 'Unknown',
+  bio: 'Sellers shown brightly with the use of horror frosting fake flowers. In the award wining piece, "A Desert of Petals Tears", she expressed the loss of her father in 2005. This piece took 10 years to complete. Still you can find her adding to it, as she does with all of her pieces. They never stop growing.'
+};
+
+
+function addArtist(array) {
+  artists.push(array);
+
+}
+
+
 
 
 
 // 🎨🎨 STRETCH 🎨🎨//
 
 /* STRETCH 1: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 20th century (1800-1900) */
-
-function get20s(/* Code here */){
-
-    /* Code here */
-
+function get20s() {
+  const artists20 = [];
+  for (i = 0; i <= artists.length - 1; i++) {
+    if (parseInt(artists[i].years) >= 1900) {
+      artists20.push(artists[i].name);
+    }
   }
+  return artists20;
+}
+console.log(get20s(artists));
 
 /* STRETCH 2: Programtically console.log HTML element structure 
 
